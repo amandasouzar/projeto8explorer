@@ -37,6 +37,9 @@ header h1 {
     padding: 0.8rem 0;
     margin-bottom: 5.0rem;
 }
+header p {
+    display: none;
+}
 main {
     margin: 0 3.2rem 6.0rem;
 }
@@ -52,6 +55,20 @@ main .produtos {
     display: flex;
     flex-direction: column;
     gap: 3.6rem;
+    align-items: center;
+}
+main .produtos1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+}
+main .produtos2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+}
+main .produtos3 {
+    display: none;
 }
 .card {
     position: relative;
@@ -79,4 +96,70 @@ main .produtos {
     color: #4A4E69;
     letter-spacing: 0.05em;
     text-align: center;
+}
+footer {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .page {
+        max-width: 128rem;
+        display: flex;
+        flex-direction: row;
+    }
+    header {
+        width: 37.7rem;
+        height: 72rem;
+    }
+    header p {
+        display:block;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 2rem;
+        color: white;
+    
+        width: 27.5rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    main section {
+        display: none;
+    }
+    .card p {
+        display: none;
+    }
+    main .produtos {
+        display: flex;
+        flex-direction: row;
+        gap: 3.2rem;
+        margin: 6.4rem 8.1rem 5rem 10rem
+        
+    }
+    main .produtos1 {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+    main .produtos2 {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+    main .produtos3 {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+    footer {
+        display: inline;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+    
+        text-align: center;
+        color: #4A4E69;
+        margin-bottom: 4.6rem;
+    }
 }
